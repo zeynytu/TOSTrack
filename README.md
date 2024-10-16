@@ -1,5 +1,8 @@
 # TOSTrack: Template-Aided One-Stream Tracker	
 
+The official implementation of The Abstracte (The poster will be uploaded after the presentation)
+Zeyn, Muhammed and Bayraktar, Ertuğrul, TOSTrack: Template-Aided One-Stream Tracker, 5th Symposium on Pattern Recognition and Applications.
+    
 
 ## Set project paths
 Run the following command to set paths for this project
@@ -11,6 +14,23 @@ After running this command, you can also modify paths by editing these two files
 lib/train/admin/local.py  # paths about training
 lib/test/evaluation/local.py  # paths about testing
 ```
+
+## Install the environment
+**Option1**: Use the Anaconda (CUDA 10.2)
+```
+conda create -n tostrack python=3.8
+conda activate tostrack
+bash install.sh
+```
+
+**Option2**: Use the Anaconda (CUDA 11.3)
+```
+conda env create -f tostrack_cuda113_env.yaml
+```
+
+**Option3**: Use the docker file
+
+We provide the full docker file here.
 
 ## Training
 Download pre-trained [MAE ViT-Base weights](https://dl.fbaipublicfiles.com/mae/pretrain/mae_pretrain_vit_base.pth) and put it under `$PROJECT_ROOT$/pretrained_models` (different pretrained models can also be used, see [MAE](https://github.com/facebookresearch/mae) for more details).
@@ -26,6 +46,14 @@ Replace `--config` with the desired model config under `experiments/ostrack`.
 Download the model weights from [Google Drive](https://drive.google.com/drive/folders/1PHfGDgO6lOB-oTO91MK3o10uQJUUXKZN?usp=sharing) 
 
 Put the downloaded weights on `$PROJECT_ROOT$/output/checkpoints/train/ostrack`
+
+## DEMO
+## Training
+Download the pretrained model and install the required packages from yaml file then run:
+
+```
+python tracking/video_demo.py --videofile <YOUR_VIDEO>
+```
 
 
 ## Acknowledgement
