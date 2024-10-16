@@ -1,6 +1,6 @@
 # TOSTrack: Template-Aided One-Stream Tracker	
 
-The official implementation of The Abstracte (The poster will be uploaded after the presentation)
+The official implementation of The Abstract (The poster will be uploaded after the presentation) <br />
 Zeyn, Muhammed and Bayraktar, Ertuğrul, TOSTrack: Template-Aided One-Stream Tracker, 5th Symposium on Pattern Recognition and Applications.
     
 
