@@ -48,7 +48,7 @@ Download the model weights from [Google Drive](https://drive.google.com/drive/fo
 Put the downloaded weights on `$PROJECT_ROOT$/output/checkpoints/train/ostrack`
 
 ## DEMO
-## Training
+
 Download the pretrained model and install the required packages from yaml file then run:
 
 ```
